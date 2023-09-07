@@ -21,7 +21,7 @@ pipeline{
             }
             post{
                 always{
-                    mail to: "khuzaima Jamil@gmail.com",
+                    mail to: "khuzaima.Jamil@gmail.com",
                     subject: "JUnit integration test",
                     body: "Status: completed"
                 }
@@ -38,7 +38,7 @@ pipeline{
             }
             post{
                 always{
-                    mail to: "khuzaima Jamil@gmail.com",
+                    mail to: "khuzaima.Jamil@gmail.com",
                     subject: "OWASP ZAP Security test",
                     body: "Status: completed"
                 }
@@ -63,9 +63,9 @@ pipeline{
     }
     post { 
         always { 
-                    mail to: "khuzaima Jamil@gmail.com",
+                    mail to: "khuzaima.Jamil@gmail.com",
                     subject: "Pipieline run completed",
-                    body: "Status: completed"
+                    body: "Status: completed. Build log: http://localhost:8080/job/pipeline%206.2/2/consoleText"
         }
     }
 }
