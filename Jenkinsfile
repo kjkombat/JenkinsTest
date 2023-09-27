@@ -68,7 +68,7 @@ pipeline{
                     body: "Status: completed. Build log: http://localhost:8080/job/pipeline%206.2/2/consoleText"
         }
         success {
-            emailext attachLog: true, body: "Status: completed.", replyTo: 'khuzaima.Jamil@gmail.com',
+            emailext attachLog: true, body: "Status: completed.",
        subject: "Pipieline run completed", to: 'khuzaima.Jamil@gmail.com'
         }
     }
