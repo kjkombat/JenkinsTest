@@ -65,7 +65,8 @@ pipeline{
         always { 
                     mail to: "khuzaima.Jamil@gmail.com",
                     subject: "Pipieline run completed",
-                    body: "Status: completed. Build log: http://localhost:8080/job/pipeline%206.2/2/consoleText"
+                    body: "Status: completed. Build log: http://localhost:8080/job/pipeline%206.2/2/consoleText",
+                    attachLog: true
         }
     }
 }
