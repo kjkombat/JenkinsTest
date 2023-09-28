@@ -19,13 +19,6 @@ pipeline{
             steps{
                 echo "Junit integration tests"
             }
-            post{
-                always{
-                    mail to: "khuzaima.Jamil@gmail.com",
-                    subject: "JUnit integration test",
-                    body: "Status: completed"
-                }
-            }
         }
         stage("Code Quality Check"){
             steps{
@@ -35,13 +28,6 @@ pipeline{
        stage("Security test"){
             steps{
                 echo "OWASP ZAP Security test"
-            }
-            post{
-                always{
-                    mail to: "khuzaima.Jamil@gmail.com",
-                    subject: "OWASP ZAP Security test",
-                    body: "Status: completed"
-                }
             }
         }
         stage("Deploy to stage"){
