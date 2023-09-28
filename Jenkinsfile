@@ -51,7 +51,7 @@ pipeline{
         always { 
                         emailext attachLog: true,
                         compressLog: true,
-                        body: "Status: completed.",
+                        body: "Status: completed. test",
                         subject: "Pipieline run completed",
                         to: 'khuzaima.Jamil@gmail.com'
         }
