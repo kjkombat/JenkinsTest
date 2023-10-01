@@ -50,7 +50,7 @@ pipeline{
     post { 
         always { 
                     emailext to: "khuzaima.jamil@gmail.com", 
-                    subject: 'Status: Completed',
+                    subject: 'Status: Completed test',
                     body: 'Pipeline run completed',
                     attachLog: true
         }
