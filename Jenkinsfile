@@ -49,10 +49,11 @@ pipeline{
     }
     post { 
         always { 
-                        emailext 
-                        body: "Status: completed. test",
-                        subject: "Pipieline run completed",
-                        to: 'khuzaima.Jamil@gmail.com'
+                    emailext subject: 'Successful Deployment',
+                    mail to: "khuzaima.jamil@gmail.com",
+                    subject: "Pipeline Run successful.",
+                    body: "Build was Successful. Code has been successfully deployed to $PRODUCTION_ENVIRONMENT environment.",
+                    attachLog: true
         }
     }
 }
