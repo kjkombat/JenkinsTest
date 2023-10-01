@@ -49,10 +49,9 @@ pipeline{
     }
     post { 
         always { 
-                    emailext subject: 'Successful Deployment',
-                    mail to: "khuzaima.jamil@gmail.com",
-                    subject: "Pipeline Run successful.",
-                    body: "Build was Successful. Code has been successfully deployed to $PRODUCTION_ENVIRONMENT environment.",
+                    emailext to: "khuzaima.jamil@gmail.com", 
+                    subject: 'Security Scan failed.',
+                    body: 'Security Scan has failedd. Please Check and Redeploy.',
                     attachLog: true
         }
     }
