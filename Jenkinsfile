@@ -50,7 +50,7 @@ pipeline{
     post { 
         always { 
                     emailext to: "khuzaima.jamil@gmail.com", 
-                    subject: 'Security Scan failed. test',
+                    subject: 'Security Scan failed. test 2',
                     body: 'Security Scan has failedd. Please Check and Redeploy.',
                     attachLog: true
         }
